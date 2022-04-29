@@ -1,4 +1,4 @@
-# Sudo-Solver-Brute-Force
+# Sudoku-Solver-Brute-Force
 A graphical Sudoku-board solver using a recursive brute force algorithm (backtracking), and pygame.
 
 ## Usage
