@@ -329,11 +329,11 @@ filled_board = board_filling(window)
 #check if user filled board is legal
 check = board_checking(filled_board)
 if not check[0]:
+    #print error information
     print(False)
     print("Conflict on cell: ", end="")
     print(check[1])
     filled_board.printboard()
-    sys.exit()
 else:
     #solve the board using backtracking algorithm
     solved_board = board_solving(window, filled_board)
