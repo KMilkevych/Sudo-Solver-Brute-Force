@@ -290,9 +290,9 @@ def board_checking(board):
     for y in range(0, 9):
         for x in range(0, 9):
             # If user filled board has a filled cell
-            cell_value = board.board[y][x]
+            cell_value = board.board[y][x] - 1
             block_num = (y//3)*3 + x//3
-            if cell_value != 0:
+            if cell_value != (-1):
                 if rows[y][cell_value] == False:
                     rows[y][cell_value] = True
                 else:
